@@ -64,8 +64,13 @@ namespace WaterMark_Project
                         text = this.TxtWaterMark.Text.ToUpper().Trim();
                     }
                     #endregion
+                    System.Drawing.Color color1 = System.Drawing.Color.Turquoise;
+
+
+                    iTextSharp.text.Color color = new iTextSharp.text.Color(Convert.ToInt32(color1.R), Convert.ToInt32(color1.G), Convert.ToInt32(color1.B));
+
                     PDFController pdf = new PDFController();
-                    pdf.AddWatermarkText("main.pdf", "main_water.pdf", text, null, size, null, opacity, rotation);
+                    pdf.AddWatermarkText("main.pdf", "main_water.pdf", text, null, size, color, opacity, rotation);
                 }
                 else
                 {
