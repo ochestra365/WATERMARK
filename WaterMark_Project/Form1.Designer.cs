@@ -39,6 +39,9 @@ namespace WaterMark_Project
             this.label4 = new System.Windows.Forms.Label();
             this.Txtrotation = new System.Windows.Forms.TextBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.colorPickEdit1 = new DevExpress.XtraEditors.ColorPickEdit();
+            this.label5 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.colorPickEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnExport
@@ -116,11 +119,33 @@ namespace WaterMark_Project
             this.Txtrotation.Size = new System.Drawing.Size(213, 21);
             this.Txtrotation.TabIndex = 11;
             // 
+            // colorPickEdit1
+            // 
+            this.colorPickEdit1.EditValue = System.Drawing.Color.Empty;
+            this.colorPickEdit1.Location = new System.Drawing.Point(114, 218);
+            this.colorPickEdit1.Name = "colorPickEdit1";
+            this.colorPickEdit1.Properties.AutomaticColor = System.Drawing.Color.Black;
+            this.colorPickEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.colorPickEdit1.Size = new System.Drawing.Size(213, 20);
+            this.colorPickEdit1.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(46, 223);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 12);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "colorPick :";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 538);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.colorPickEdit1);
             this.Controls.Add(this.Txtrotation);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.TxtOpacity);
@@ -133,6 +158,7 @@ namespace WaterMark_Project
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.colorPickEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +176,8 @@ namespace WaterMark_Project
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Txtrotation;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private DevExpress.XtraEditors.ColorPickEdit colorPickEdit1;
+        private System.Windows.Forms.Label label5;
     }
 }
 

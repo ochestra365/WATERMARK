@@ -26,7 +26,7 @@ namespace WaterMark_Project
             {
 
                 System.Drawing.Color color1 = default;
-                color1 = this.colorDialog1.ShowDialog() == DialogResult.OK ? this.colorDialog1.Color : System.Drawing.Color.Turquoise;
+                color1 = this.colorPickEdit1.Color != null ? this.colorPickEdit1.Color : System.Drawing.Color.Blue;
                 FileInfo file = new FileInfo("main.pdf");
                 FileInfo outputFile = new FileInfo("main_water.pdf");
                 if (file.Exists)
