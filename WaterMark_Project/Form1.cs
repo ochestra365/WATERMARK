@@ -24,6 +24,9 @@ namespace WaterMark_Project
         {
             try
             {
+
+                System.Drawing.Color color1 = default;
+                color1 = this.colorDialog1.ShowDialog() == DialogResult.OK ? this.colorDialog1.Color : System.Drawing.Color.Turquoise;
                 FileInfo file = new FileInfo("main.pdf");
                 FileInfo outputFile = new FileInfo("main_water.pdf");
                 if (file.Exists)
@@ -64,11 +67,7 @@ namespace WaterMark_Project
                         text = this.TxtWaterMark.Text.ToUpper().Trim();
                     }
                     #endregion
-                    System.Drawing.Color color1 = System.Drawing.Color.Turquoise;
-
-
                     iTextSharp.text.Color color = new iTextSharp.text.Color(Convert.ToInt32(color1.R), Convert.ToInt32(color1.G), Convert.ToInt32(color1.B));
-
                     PDFController pdf = new PDFController();
                     pdf.AddWatermarkText("main.pdf", "main_water.pdf", text, null, size, color, opacity, rotation);
                 }

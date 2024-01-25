@@ -38,6 +38,7 @@ namespace WaterMark_Project
             this.TxtOpacity = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Txtrotation = new System.Windows.Forms.TextBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
             // BtnExport
@@ -148,6 +149,7 @@ namespace WaterMark_Project
         private System.Windows.Forms.TextBox TxtOpacity;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Txtrotation;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
